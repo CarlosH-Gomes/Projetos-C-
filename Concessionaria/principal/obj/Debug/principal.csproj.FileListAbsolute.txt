@@ -1,0 +1,16 @@
+C:\Users\carlo\Desktop\projeto POO\principal\bin\Debug\principal.exe.config
+C:\Users\carlo\Desktop\projeto POO\principal\bin\Debug\principal.exe
+C:\Users\carlo\Desktop\projeto POO\principal\bin\Debug\principal.pdb
+C:\Users\carlo\Desktop\projeto POO\principal\obj\Debug\principal.csprojAssemblyReference.cache
+C:\Users\carlo\Desktop\projeto POO\principal\obj\Debug\principal.CadastroCliente.resources
+C:\Users\carlo\Desktop\projeto POO\principal\obj\Debug\principal.Form1.resources
+C:\Users\carlo\Desktop\projeto POO\principal\obj\Debug\principal.Properties.Resources.resources
+C:\Users\carlo\Desktop\projeto POO\principal\obj\Debug\principal.csproj.GenerateResource.cache
+C:\Users\carlo\Desktop\projeto POO\principal\obj\Debug\principal.csproj.CoreCompileInputs.cache
+C:\Users\carlo\Desktop\projeto POO\principal\obj\Debug\principal.exe
+C:\Users\carlo\Desktop\projeto POO\principal\obj\Debug\principal.pdb
+C:\Users\carlo\Desktop\projeto POO\principal\obj\Debug\principal.CadastroCarro.resources
+C:\Users\carlo\Desktop\projeto POO\principal\obj\Debug\principal.frm_consultaCarro.resources
+C:\Users\carlo\Desktop\projeto POO\principal\obj\Debug\principal.frm_consultaCliente.resources
+C:\Users\carlo\Desktop\projeto POO\principal\obj\Debug\principal.frm_compra.resources
+C:\Users\carlo\Desktop\projeto POO\principal\obj\Debug\principal.frm_consultaCompra.resources

@@ -1,0 +1,61 @@
+cCREATE DATABASE Concessionaria
+
+CREATE TABLE carro
+(
+	car_cod INT IDENTITY,
+	car_placa VARCHAR(7) NOT NULL UNIQUE,
+	car_modelo VARCHAR(50) NOT NULL,
+	car_marca VARCHAR(30) NOT NULL,
+	car_ano VARCHAR(4) NOT NULL,
+	car_cor VARCHAR(20) NOT NULL,
+	car_chassi VARCHAR(17) NOT NULL UNIQUE,
+	car_renavam VARCHAR(11) NOT NULL UNIQUE,
+	car_valor VARCHAR(10) NOT NULL,
+	car_Ipva VARCHAR(10) NOT NULL,
+	car_Licenciamento VARCHAR(10) NOT NULL,
+	PRIMARY KEY(car_placa)
+);
+
+CREATE TABLE cliente
+(
+	cli_cod INT IDENTITY,
+	cli_nome VARCHAR(60) NOT NULL,
+	cli_cpf VARCHAR(11) NOT NULL UNIQUE,
+	cli_rg VARCHAR(9) NOT NULL UNIQUE,
+	cli_telefone VARCHAR(11) NOT NULL,
+	cli_sexo VARCHAR(9) NOT NULL,
+	cli_estadoCivil VARCHAR(8) NOT NULL,
+	cli_rua VARCHAR(60) NOT NULL,
+	cli_cidade VARCHAR(60) NOT NULL,
+	cli_cep VARCHAR(11) NOT NULL,
+	cli_estado VARCHAR(20) NOT NULL,
+	cli_numero VARCHAR(5)NOT NULL,
+	cli_complemento VARCHAR(10),
+	cli_banco VARCHAR(20) NOT NULL,
+	cli_codAgencia VARCHAR(20) NOT NULL,
+	cli_nomeAgencia VARCHAR(40) NOT NULL,
+	cli_contaCorrente VARCHAR(40) NOT NULL UNIQUE,
+	PRIMARY KEY (cli_cpf)
+);
+
+CREATE TABLE compra
+(
+	comp_numeroNota VARCHAR(20),
+	comp_data VARCHAR(11),
+	cli_cpf VARCHAR(11),
+	FOREIGN KEY (cli_cpf) REFERENCES cliente (cli_cpf),
+	PRIMARY KEY(comp_numeroNota)
+)
+
+drop table compra
+
+drop table item_compra
+
+CREATE TABLE item_compra
+(
+	comp_numeroNota VARCHAR(20),
+	car_placa VARCHAR(7),
+	FOREIGN KEY (car_placa) REFERENCES carro (car_placa),
+	FOREIGN KEY (comp_numeroNota) REFERENCES compra (comp_numeroNota),
+	PRIMARY KEY (comp_numeroNota, car_placa)
+)
